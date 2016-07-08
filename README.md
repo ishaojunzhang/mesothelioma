@@ -1,0 +1,5 @@
+# Diagnosis of Mesothelioma’s Disease Based on Classification
+
+Malignant mesotheliomas (MM) is very aggressive tumors of the pleura. It is a rare disease but depending on region could be considered as one of the major public health problems. It usually appears with symptoms like shortness of breath, pain in the chest and painful or persistent coughing, none of which immediately alert the doctor to a diagnosis of mesothelioma. There is no doubt that evaluations of data taken from patients and decisions of experts are the most important factors in diagnosis. However, sometimes different classification techniques are needed to diagnose the disease.
+
+In this study, different classification methods are investigated for MM’s disease diagnosis and the results are compared to Multilayer Neural Network (MLNN), Learning Vector Quantization neural network (LVQ) and Probabilistic Neural Network (PNN). The methods used are Linear Discriminant Analysis (LDA), Quadratic Discriminant Analysis (QDA), classification trees, random forest (RF), Support Vector Machines (SVM) and k-nearest neighbors (KNN).

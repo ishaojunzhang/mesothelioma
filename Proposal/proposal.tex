@@ -1,0 +1,92 @@
+\documentclass[conference,onecolumn]{IEEEtran}
+
+% *** GRAPHICS RELATED PACKAGES ***
+%
+\ifCLASSINFOpdf
+  % \usepackage[pdftex]{graphicx}
+  % declare the path(s) where your graphic files are
+  % \graphicspath{{../pdf/}{../jpeg/}}
+  % and their extensions so you won't have to specify these with
+  % every instance of \includegraphics
+  % \DeclareGraphicsExtensions{.pdf,.jpeg,.png}
+\else
+  % or other class option (dvipsone, dvipdf, if not using dvips). graphicx
+  % will default to the driver specified in the system graphics.cfg if no
+  % driver is specified.
+  % \usepackage[dvips]{graphicx}
+  % declare the path(s) where your graphic files are
+  % \graphicspath{{../eps/}}
+  % and their extensions so you won't have to specify these with
+  % every instance of \includegraphics
+  % \DeclareGraphicsExtensions{.eps}
+\fi
+% graphicx was written by David Carlisle and Sebastian Rahtz. It is
+% required if you want graphics, photos, etc. graphicx.sty is already
+% installed on most LaTeX systems. The latest version and documentation
+% can be obtained at: 
+% http://www.ctan.org/tex-archive/macros/latex/required/graphics/
+
+% correct bad hyphenation here
+\hyphenation{op-tical net-works semi-conduc-tor}
+
+
+\begin{document}
+\nocite{*}
+%
+% paper title
+% can use linebreaks \\ within to get better formatting as desired
+% Do not put math or special symbols in the title.
+\title{Classification of Mesothelioma's Disease}
+
+
+% author names and affiliations
+% use a multiple column layout for up to three different
+% affiliations
+\author{\IEEEauthorblockN{Shaojun Zhang}
+\IEEEauthorblockA{Department of Statistics\\
+	University of Florida\\}
+\and
+\IEEEauthorblockN{Sahba Akhavan Niaki}
+\IEEEauthorblockA{Department of Statistics\\
+	University of Florida\\}
+\and
+\IEEEauthorblockN{Delaram Ghoreishi}
+\IEEEauthorblockA{Department of Physics\\
+	University of Florida\\}
+}
+
+% make the title area
+\maketitle
+
+\begin{abstract}
+Malignant mesothelioma (MM) is an aggressive progress tumor that results from mesotel cells and pleura usually incurs. The two important causes, in MM etiologies are known as asbestos and erionite, both mineral fibers. Correctly classifying the type of the disease has a significant meaning in medicine. However, this data set was made public on the UC Irvine Machine Learning Repository recently and not much analysis has been done. In this project, several statistical methods will be applied to classify the type of the disease. The results of these methods will be analyzed and compared.
+\end{abstract}
+
+\IEEEpeerreviewmaketitle
+
+\section*{Project plan}
+\subsection{Data}
+The data set contains 324 MM patient data each with 34 categorical and quantitative features. The features are: age, gender, city, asbestos exposure, type of MM, duration of asbestos exposure, diagnosis method, keep side, cytology, duration of symptoms, dyspnoea, ache on chest, weakness, habit of cigarette, performance status, White Blood cell count (WBC), hemoglobin (HGB), platelet count (PLT), sedimentation, blood lactic dehydrogenise (LDH), Alkaline phosphatise (ALP), total protein, albumin, glucose, pleural lactic dehydrogenise, pleural protein, pleural albumin, pleural glucose, dead or not, pleural effusion, pleural thickness on tomography, pleural level of acidity (pH), C-reactive protein (CRP) and class of diagnosis. A separate dataset as test data is not available.
+
+\subsection{Methods}
+Different possible classification methods will be applied to this data set to determine the class of diagnosis for each patient. The methods include LDA, QDA, classification trees, random forest, $K$-nearest neighbors, SVM and logistic regression. The performance of these methods will be evaluated based on cross-validation. 
+
+Three different artificial neural networks (ANNs) structures, probabilistic
+neural network (PNN), multilayer neural network (MLNN) and learning vector quantization (LVQ) neural network, have been applied for classification of this dataset, with accuracies of 96.3\%, 94.41\% and 91.14\% respectively \cite{Er201275}. Therefore, we will also compare the results from our methods to those from ANNs.
+
+
+
+% trigger a \newpage just before the given reference
+% number - used to balance the columns on the last page
+% adjust value as needed - may need to be readjusted if
+% the document is modified later
+%\IEEEtriggeratref{8}
+% The "triggered" command can be changed if desired:
+%\IEEEtriggercmd{\enlargethispage{-5in}}
+
+% references section
+\bibliographystyle{IEEEtran}
+\bibliography{proposal}
+\end{document}
+
+
